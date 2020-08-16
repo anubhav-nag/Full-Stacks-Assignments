@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+    }
+    .box{
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+    }
+    #navi{
+        position: sticky;
+        top: 0px;
+        background-color: gray;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    ul li{
+        list-style-type: none;
+        float: left;
+        /* padding: 20px 40px; */
+        font-size: 25px;
+    }
+    ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 25px 40px;
+    }
+    ul li a:hover{
+        color: black;
+        background-color: orange;
+    }
+    #home{
+        position: relative;
+        margin-bottom: 40px ;
+    }
+    #home img{
+        display: block;
+        width: 1330px;
+    }
+    #home span{
+        position: absolute;
+        color: white;
+        font-size: 70px;
+        font-weight: bold;
+        top: 20px;
+        left: 20px;
+    }
+    #team{
+        display: block;
+        margin: 80px 0px 40px;
+    }
+    h2{
+        text-align: center;
+        font-weight: bolder;
+    }
+    #members img{
+        display: flex;
+        float: left;
+        border-radius: 50%;
+        margin: 30px 50px 0px 50px;
+    }
+    #about{
+        display: block;
+        margin: 80px 0px 40px;
+    }
+    #content{
+        display: flex;
+        float: left;
+    }
+    .left , .right{
+        width: 50%;
+        height: 600px;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+    .left{
+        background-color: grey;
+        color: white;
+        padding: 5px 5px;
+        text-align: justify;
+    }
+    .right img{
+        height: 190px;
+        width: 100%;
+    }
+    .img{
+        margin-bottom: 15px;
+    }
+    #used{
+        margin: 80px 0px 40px;
+    }
+    .tech{
+        margin-top: 20px;
+    }
+    .box2{
+        background-color: lightgray;
+        display: block;
+        float: left;
+        width: 22%;
+        height: 360px;
+        text-align: justify;
+        margin: 0px 15px 0px 20px;
+        padding: 0px 0px 10px;
+    }
+    .box p{
+        padding: 5px;
+        margin: 10px 0px 10px;
+        color: white;
+    }
+    .box2 h3{
+        text-align: center;
+    }
+    .box2 img{
+        width: 100%;
+        height: 35%;
+    }
+    .box2 a:link{
+        display: block;
+        background-color: red;
+        color: white;
+        padding: 10px 25px; 
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .box2 a:visited{
+        background-color: blueviolet;
+    }
+    .box2 a:active{
+        background-color:blue;
+    }
+    .box2 a:hover{
+        background-color: firebrick;
+    }
+    #contact{
+        margin-top: 80px;
+    }
+    .last{
+        margin: 20px 0px 10px;
+        padding: 15px 0px 15px;
+        background-color: violet;
+        text-align: center;
+    }
+    #about:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    #team:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    #used:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    #contact:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+<body>
+    <div class="box">
+        <div id="navi">
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#about"> ABOUT US </a></li>
+                <li><a href="#team"> TEAM </a></li>
+                <li><a href="#used"> TECHNOLOGIES </a></li>
+                <li><a href="#contact"> CONTACT </a></li>
+            </ul>
+        </div>
+        <div id="home">
+            <img src="..\Pictures\Practical-8_Pictures\emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
+            <span>PRACTICAL- 8</span>
+        </div>
+        <div id="team">
+            <h2>Team Members</h2>    
+            <div id="members">
+                <img src="..\Pictures\Practical-8_Pictures\1.png" alt="">
+                <img src="..\Pictures\Practical-8_Pictures\2.png" alt="">
+                <img src="..\Pictures\Practical-8_Pictures\3.png" alt="">
+                <img src="..\Pictures\Practical-8_Pictures\9.png" alt="">
+            </div>
+        </div>
+        <div id="about">
+            <h2>About Us</h2>
+            <div id="content">
+                <div class="left">
+                    <h3>About Projects</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto voluptate dolor sequi voluptatibus cumque atque amet corrupti ipsum aliquam harum nemo eaque porro vitae expedita, iste fuga nesciunt. Soluta excepturi neque saepe accusantium consectetur natus corrupti reiciendis totam, nesciunt sed rerum, nisi ipsum, non minus nihil laudantium quidem esse commodi. Eius commodi illo fuga molestiae magni, accusamus delectus quisquam minus? Accusantium veniam pariatur inventore autem quis, eum adipisci similique cupiditate magni eligendi expedita atque eaque minima, non nobis doloremque libero nemo error aspernatur fugiat blanditiis, sapiente eius! Dicta nostrum similique itaque culpa provident, ut ipsam atque veniam possimus necessitatibus totam natus maxime aliquid deserunt quidem ipsum dolore odio harum illum deleniti aspernatur tenetur at cumque exercitationem! Qui odit rerum perferendis, dolore tempore excepturi repellendus cupiditate dolor at illo soluta voluptas aliquid ducimus beatae nobis! Aliquam qui repellat laudantium id quisquam unde tenetur impedit nemo numquam? Repellat earum adipisci asperiores laudantium neque voluptatibus eaque dolorum, sint labore quam magni temporibus eius culpa dignissimos, molestias, totam quia commodi. Ea exercitationem atque ut distinctio et obcaecati expedita explicabo ad dolorum? Dicta quaerat porro accusamus accusantium, maiores animi saepe iure soluta nostrum delectus vel possimus ipsam reiciendis quae aut, ratione nulla sint nam!
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="..\Pictures\Practical-8_Pictures\p1.jpg" class="img" alt="">
+                    <img src="..\Pictures\Practical-8_Pictures\p2.jpeg" class="img" alt="">
+                    <img src="..\Pictures\Practical-8_Pictures\p3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="used">
+            <h2>Technologies Used</h2>
+            <div class="tech">
+                <div class="box2">
+                    <img src="..\Pictures\html5_0.png" alt="">
+                    <h3>Introduction to HTML</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur facilis quos cumque ab voluptates eaque distinctio autem, provident optio?</p>
+                    <a href="Assignment-5(html).html" target="_blank">Read More</a>
+                </div>
+                <div class="box2">
+                    <img src="..\Pictures\CSS.png" id="img2" alt="">
+                    <h3>Introduction to CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur facilis quos cumque ab voluptates eaque distinctio autem, provident optio?</p>
+                    <a href="Assignment-5(CSS).html" target="_blank">Read More</a>
+                </div>
+                <div class="box2">
+                    <img src="..\Pictures\JS.png" alt="">
+                    <h3>Introduction to JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur facilis quos cumque ab voluptates eaque distinctio autem, provident optio?</p>
+                    <a href="Assignment-5(Js).html" target="_blank">Read More</a>
+                </div>
+                <div class="box2">
+                    <img src="..\Pictures\bts.png" alt="">
+                    <h3>Introduction to Bootstarp</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur facilis quos cumque ab voluptates eaque distinctio autem, provident optio?</p>
+                    <a href="Assignment-5(BootStrap).html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <div class="last">
+                <span>Website Template for Practical-8 @<a href=""> Beta-Labs</a><br><br><a href="#navi">Back to Top</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
