@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Practical-9</title>
 </head>
 <style>
@@ -10,6 +11,7 @@
         margin: 0px;
         padding: 0px;
         scroll-behavior: smooth;
+        box-sizing: border-box;
     }
     html{
         scroll-padding-top: 100px;
@@ -27,44 +29,47 @@
         top: 0px;
         background-color: gray;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
+        /* margin-bottom: 20px; */
+        /* width: 100%; */
+    }
+    .menu{
         width: 100%;
-        
+        text-align: center;
+        list-style: none;
+        position: absolute;
     }
-    ul li{
-        list-style-type: none;
-        float: left;
-        /* padding: 20px 40px; */
-        font-size: 25px;
+    .menu li{
+        line-height: 80px;
+        display: inline-block;
     }
-    ul li a {
+    .menu li a {
         display: block;
         text-decoration: none;
         color: white;
-        padding: 25px 40px;
+        padding: 0px 40px;
+        font-size: 25px;
     }
-    ul li a:hover{
+    .menu li a:hover{
         color: black;
         background-color: orange;
     }
     #home{
-        position: relative;
-        margin-bottom: 40px ;
-    }
-    #home img{
-        display: block;
-        width: 1330px;
+        margin-bottom: 40px;
+        background-image: url("../Pictures/Practical-8_Pictures/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 680px;
+        width: 100%;
+        display: flex;
+        margin-top: 30px;
     }
     #home span{
-        position: absolute;
+        padding-top: 20px;
+        padding-left: 20px;
         color: white;
         font-size: 70px;
         font-weight: bold;
-        top: 20px;
-        left: 20px;
+
     }
     #team{
         display: block;
@@ -162,6 +167,11 @@
         background-color: violet;
         text-align: center;
     }
+    .menu:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
     #about:after {
     content: "";
     display: table;
@@ -182,20 +192,214 @@
     display: table;
     clear: both;
     }
+    .show-btn , .hide-btn{
+        font-size: 30px;
+        color: white;
+        line-height: 80px;
+        display: none;
+    }
+    .show-btn{
+        float: right;
+    }
+    #chk{
+        position: absolute;
+        visibility: hidden;
+        z-index: -10;
+    }
+
+    @media (max-width: 719px){
+        .box{
+            min-width: 320px;
+        }
+        #navi{
+            width: 100%;
+            background-color: gray;
+            top: 0;
+            height: 80px;
+            position: fixed;
+        }
+        .show-btn,.hide-btn{
+            display: block;
+            position: absolute;
+            right: 20px;
+        }
+        .hide-btn{
+            display: block;
+            top: 8px;
+        }
+        
+        #home{
+            width: 100%;
+            margin-top: 90px;
+        }
+        .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0px;
+        line-height: normal;
+        transition: 0.2s;
+       }
+       #chk:checked ~ .menu{
+            right: 0%;
+        }
+      .menu li {
+        display: block;
+       }
+      .menu li a {
+        display: block;
+       }
+       #members{
+           width: 100%;
+           margin-left: 50px;
+       }
+       #members img{
+            border-radius: 50%;
+            height: 70%;
+            width: 70%;
+            float: left;
+       }
+       #content{
+           display: block;
+
+       }
+       .left , .right{
+        width: 100%;
+        height: 100px; 
+        }
+        .left{
+           overflow: scroll; 
+           margin-top: 20px;
+        }
+        .right{
+            height: 300px;
+        }
+        .right img{
+            height: 100px;
+        }
+        #content:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .tech{
+            width: 100%;
+        }
+        .box2{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (min-width: 720px) and (max-width: 1010px){
+        #navi{
+            width: 100%;
+            background-color: gray;
+            top: 0;
+            height: 80px;
+            position: fixed;
+        }
+        .show-btn,.hide-btn{
+            display: block;
+            position: absolute;
+            right: 20px;
+        }
+        .hide-btn{
+            display: block;
+            top: 8px;
+        }
+        
+        #home{
+            margin-top: 90px;
+            width: 100%;
+        }
+        #content{
+           display: block;
+       }
+        .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0px;
+        line-height: normal;
+        transition: 0.7s;
+       }
+      .menu li {
+        display: block;
+       }
+      .menu li a {
+        display: block;
+       }
+       #chk:checked ~ .menu{
+            right: 0%;
+        }
+       #members{
+           width: 100%;
+       }
+       #members img{
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            float: left;
+       }
+       #content{
+           display: block;
+       }
+       .left , .right{
+        width: 100%;
+        height: 200px;
+        
+        /* margin-right: 15px; */
+        }
+        .left{
+           overflow: scroll;
+           margin-top: 20px; 
+        }
+        .right{
+            height: 600px;
+        }
+        .right img{
+            height: 200px;
+        }
+        .tech{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box2{
+            margin-left: 5px;
+            margin-right: 15px;
+            width: 45%;
+        }
+    }
 </style>
 <body>
     <div class="box">
         <div id="navi">
-            <ul>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
                 <li><a href="#home"> HOME </a></li>
                 <li><a href="#about"> ABOUT US </a></li>
                 <li><a href="#team"> TEAM </a></li>
                 <li><a href="#used"> TECHNOLOGIES </a></li>
                 <li><a href="#contact"> CONTACT </a></li>
+                <label for="chk" class="hide-btn">
+                    <i class="fa fa-window-minimize"></i>
+                </label>
             </ul>
         </div>
         <div id="home">
-            <img src="..\Pictures\Practical-8_Pictures\emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
+            <!-- <img src="..\Pictures\Practical-8_Pictures\emile-perron-xrVDYZRGdw4-unsplash.jpg" alt=""> -->
             <span>PRACTICAL- 9</span>
         </div>
         <div id="team">
@@ -255,7 +459,7 @@
         <div id="contact">
             <h2>Contact</h2>
             <div class="last">
-                <span>Website Template for Practical-8 @<a href="https://www.beta-labs.in/" target="_blank"> Beta-Labs</a><br><br><a href="#navi">Back to Top</a></span>
+                <span>Website Template for Practical-9 @<a href="https://www.beta-labs.in/" target="_blank"> Beta-Labs</a><br><br><a href="#navi">Back to Top</a></span>
             </div>
         </div>
     </div>
