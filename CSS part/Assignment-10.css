@@ -45,7 +45,7 @@
 .sidebar{
     width: 20%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 70px;
     background-color: #2ecc71;
     left: -100%;
@@ -95,7 +95,7 @@ i{
 .show-btn , .hide-btn{
     font-size: 35px;
     color: white;
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 50px;
 }
