@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    top: 0;
 }
 
 .header img{
@@ -27,6 +28,7 @@
 }
 
 .content{
+    margin-top: 70px;
     width: 100%;
     padding: 20px;
     transition: 0.7s;
@@ -37,6 +39,7 @@
     max-width: 700px;
     display: block;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .content p{
