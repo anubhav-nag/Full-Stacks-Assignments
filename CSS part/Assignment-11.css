@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#book{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+}
+
+th, td{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    padding: 10px;
+}
+
+tr{
+    height: 60px;
+}
+
+#book tr:nth-child(1){
+    background-color: #182C61;
+    color: white;
+}
+
+#book tr:nth-child(2) td{
+    font-weight: bold;
+}
+
+#book tr:last-child td{
+    border: none;
+}
+
+#book tr td:nth-child(2) {
+    width: 50%;
+}
+
+#book tr td:nth-child(1){
+    text-align: center;
+}
+
+#book tr td:nth-child(5) i{
+    margin-right: 10px;
+    color: rgba(160, 156, 156, 0.5);
+}
+
+#book tr td:nth-child(5) i:hover{
+    color: rgba(14, 255, 243, 0.658);
+    transition: 0.3s;
+}
+
+a:link{
+    color: rgba(160, 156, 156, 0.822);
+}
+
+a:visited {
+    color: #EE5A24;
+}
+
+a:hover{
+    color: #e84118;
+    transition: 0.3s;
+}
+
+a:visited :hover{
+    color: #0652DD;
+    transition: 0.3s;
+}
+
+#book tr:not(:nth-child(1)):hover{
+    background-color: #dcdde1;
+    transition: 0.5s;
+}
+
+.chk{
+    color: #4cd137;
+}
+
+.un-chk{
+    color: #eb2f06;
+}
