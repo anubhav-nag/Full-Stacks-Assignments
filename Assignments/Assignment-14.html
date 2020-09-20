@@ -4,21 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-14</title>
+    <link rel="stylesheet" href="..\CSS part\Assignment-14.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <Section class="main">
-        Form Templates
-    </Section>
-    <section class="forms">
+     <Header>
+         Form Templates
+     </Header>
+     <section class="forms">
+     
+        <!-- Form - 1 -->
+     
         <section class="f1">
-            <form action=""></form>
-        </section>
-        <section class="f2">
-            <form action=""></form>
-        </section>
-        <section class="f3">
-            <form action=""></form>
-        </section>
-    </section>
+             <div class="header">
+                 <h4>Log in</h4>
+                 <i class="fa fa-facebook"></i>
+                 <i class="fab fa-twitter"></i>
+                 <i class="fab fa-google-plus-g"></i>
+             </div>
+             <form action="">
+                 <div class="main">
+                     <input type="email" name="email" id="email" placeholder="Enter email">
+                     <input type="password" name="password" id="password" placeholder="Enter password">
+                     <p>Forgot <span>Password?</span></p>
+                     <input type="button" value="Log in" id="button">
+                     <p id="sign">Dont have an account?<span>Sign Up</span></p>
+                 </div>
+             </form>
+         </section>
+
+        <!-- Form - 2 -->
+
+         <section class="f2">
+            <h4>Sign Up</h4>
+             <form action="">
+                 <div class="main">
+                     <input type="email" name="email" id="email" placeholder="Enter email">
+                     <input type="password" name="password" id="password" placeholder="Enter password">
+                     <input type="checkbox" id="checkbox">
+                     <p id="a">Accept the <span>Terms & Conditions</span></p>
+                     <input type="button" value="SIGN UP" id="button">
+                     <p id="log">Have an account?<span>Log in</span></p>
+                 </div>
+             </form>
+             <div class="footer">
+                <i class="fa fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+         </section>
+
+         <!-- Form - 3 -->
+
+         <section class="f3">
+             <h4>Sign in</h4>
+             <form action="">
+                 <div class="main">
+                     <input type="email" name="email" id="email" placeholder="Enter email">
+                     <input type="password" name="password" id="password" placeholder="Enter password">
+                     <p id="forgot">Forgot Password?</p>
+                     <input type="button" value="SIGN IN" id="button">
+                     <p id="in">or Sign in with:</p>
+                 </div>
+                 <div class="footer">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+             </form>
+         </section>
+     </section>
 </body>
 </html>
