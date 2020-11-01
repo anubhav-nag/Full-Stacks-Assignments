@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    color: honeydew;
+    padding: 40px;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.btn{
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    line-height: 20vh;
+    width: 20vh;
+    height: 20vh;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
