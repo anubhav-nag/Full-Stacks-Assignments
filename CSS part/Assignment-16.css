@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(120deg,rgb(243, 194, 103),rgb(238, 157, 7));
+    background: linear-gradient(120deg,rgb(243, 103, 103),rgb(238, 7, 7));
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
@@ -32,7 +32,7 @@ form button{
 }
 form button:hover{
     color: white;
-    background:rgb(243, 194, 103);
+    background:rgb(103, 234, 243);
 }
 
 .to-do-container{
