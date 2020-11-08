@@ -12,11 +12,8 @@ function increase(){
         b1.disabled = false;
     }
     if(count <10){
-    count++;
-    display.textContent = count;
-    }
-    if(count = 10){
-        b2.disabled = true;
+        count++;
+        display.textContent = count;
     }
 }
 
