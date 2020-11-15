@@ -4,3 +4,46 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+time{
+    font-size: 40%;
+}
+
+h1{
+    font-size: 10%;
+}
+
+h2{
+    font-size: 20%;
+    opacity: 0.6;
+}
+
+.morning{
+    background: url("Morning,jpg") bottom center;
+    background-size: cover;
+    color: brown;
+}
+
+.afternoon{
+    background: url("Afternoon.jpg");
+    background-size: cover;
+    color: rgb(116, 7, 7);
+}
+.evening{
+    background: url("Evening.jpg");
+    background-size: cover;
+    color: white;
+}
+.night{
+    background:url("Night.jpg");
+    background-size: cover;
+    color: gold;
+}
