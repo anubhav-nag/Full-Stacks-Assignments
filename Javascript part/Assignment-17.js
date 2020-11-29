@@ -1,7 +1,7 @@
 const time = document.getElementById("time");
 const greeting = document.getElementById("greeting");
 const name = document.getElementById("name");
-const Main = document.querySelector(".Main")
+const container = document.querySelector(".container")
 const date = document.getElementById("date");
 
 name.addEventListener("keypress", setName);
@@ -16,24 +16,24 @@ function showTime(){
     let todayDate = today.toDateString();
     let amPm = hour > 12 ? 'PM' : 'AM';
     if (hour < 12){
-        Main.classList.add('morning');
+        container.classList.add('morning');
         greeting.innerHTML = "Good Morning"
     }
     else if(hour > 12 & hour < 16){
-        Main.classList.remove('morning');
-        Main.classList.add('afternoon');
+        container.classList.remove('morning');
+        container.classList.add('afternoon');
         greeting.innerHTML = "Good Afternoon";
         
     }
     else if(hour >= 16 & hour < 19 ){
-        Main.classList.remove('afternoon');
-        Main.classList.add('evening')
+        container.classList.remove('afternoon');
+        container.classList.add('evening')
         greeting.innerHTML = "Good Evening";
         
     }
     else{
-        Main.classList.remove('evening');
-        Main.classList.add('night');
+        container.classList.remove('evening');
+        container.classList.add('night');
         greeting.innerHTML = "Good Night";
       
     }

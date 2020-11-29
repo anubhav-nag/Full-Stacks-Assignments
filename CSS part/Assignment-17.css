@@ -27,7 +27,7 @@ time{
 }
 
 .morning{
-    background: url("Morning,jpg") bottom center;
+    background: url("Morning.jpg") bottom center;
     background-size: cover;
     color: brown;
 }
@@ -38,7 +38,7 @@ time{
     color: rgb(116, 7, 7);
 }
 .evening{
-    background: url("evening.jpg");
+    background: url("Evening.jpg");
     background-size: cover;
     color: white;
 }
