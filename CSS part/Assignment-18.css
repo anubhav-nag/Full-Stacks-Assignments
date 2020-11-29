@@ -76,3 +76,26 @@ body{
     outline: none;
     border: none;
 }
+
+.form-container.error input{
+    border-color: red;
+}
+
+.form-container.success input{
+    border-color: green;
+}
+
+.form-container.error .fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+
+.form-container.success .fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+
+.form-container.error small{
+    color: red;
+    visibility: visible;
+}
