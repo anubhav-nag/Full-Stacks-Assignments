@@ -23,6 +23,26 @@ function checkInput(){
         showSuccess(username);
     }
 
+    if(validEmail(emailValue)){
+        showSuccess(email);
+    }
+    else{
+        showError(email, "Invalid Email");
+    }
+
+    if(validPassword(password1Value)){
+        showSuccess(password1);
+    }
+    else{
+        showError(password1, "Password is not valid must be of length 7-14");
+    }
+
+    if(password2Value === password1Value){
+        showSuccess(password2);
+    }
+    else{
+        showError(password2, "Password does not matched");
+    }
 }
 
 function showError(input,msg){
@@ -37,3 +57,20 @@ function showSuccess(input){
     formControl.className = 'form-container success';
 }
 
+function validEmail(mail) 
+{
+    const verify = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    if (mail.match(verify))
+    {
+        return (true);
+    }
+        return (false);
+}
+
+function validPassword(password){
+    const verifyp = /^[A-Za-z0-9]{7-14}$/;
+    if(password.match(verifyp)){
+        return (true);
+    }
+        return (false);
+}
