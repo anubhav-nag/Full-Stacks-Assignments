@@ -19,8 +19,11 @@ function checkInput(){
     if(usernameValue ===''){
         showError(username, "Username can not be blank");
     }
-    else{
+    else if(validUsername(usernameValue)){
         showSuccess(username);
+    }
+    else{
+        showError(username, "Username can have only small aplhabets and underscore");
     }
 
     if(validEmail(emailValue)){
@@ -57,9 +60,17 @@ function showSuccess(input){
     formControl.className = 'form-container success';
 }
 
+function validUsername(user){
+    const name = /^[a-z_]+$/;
+    if(user.match(name)){
+        return(true);
+    }
+        return(false);
+}
+
 function validEmail(mail) 
 {
-    const verify = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    const verify = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (mail.match(verify))
     {
         return (true);
@@ -68,7 +79,7 @@ function validEmail(mail)
 }
 
 function validPassword(password){
-    const verifyp = /^[A-Za-z0-9]{7-14}$/;
+    const verifyp = /^[A-Za-z0-9]{7,14}$/;
     if(password.match(verifyp)){
         return (true);
     }
