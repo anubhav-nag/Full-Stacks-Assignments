@@ -37,7 +37,7 @@ function checkInput(){
         showError(password1, "Password is not valid must be of length 7-14");
     }
 
-    if(password2Value === password1Value){
+    if(password2Value === password1Value && password2Value != ''){
         showSuccess(password2);
     }
     else{
