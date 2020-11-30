@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: purple;
+    background: linear-gradient(to bottom,#4CA9DF 0%,#292E91 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -14,14 +14,14 @@ body{
 }
 
 .container{
-    background-color: blanchedalmond;
+    background-color: #ffffff;
     width: 400px;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .header{
-    background-color: green;
+    background-color: #f1f2f6;
 }
 
 .header h2{
@@ -54,8 +54,8 @@ body{
 
 .form-container i{
     position: absolute;
-    right: 0px;
-    top: 40px;
+    right: 5px;
+    top: 38px;
     visibility: hidden;
 }
 
@@ -78,24 +78,24 @@ body{
 }
 
 .form-container.error input{
-    border-color: red;
+    border-color: #e84118;
 }
 
 .form-container.success input{
-    border-color: green;
+    border-color: #2ecc71;
 }
 
 .form-container.error .fa-exclamation-circle{
-    color: red;
+    color: #e84118;
     visibility: visible;
 }
 
 .form-container.success .fa-check-circle{
-    color: green;
+    color: #2ecc71;
     visibility: visible;
 }
 
 .form-container.error small{
-    color: red;
+    color: #e84118;
     visibility: visible;
 }
