@@ -23,7 +23,6 @@ function checkInput(){
         showSuccess(username);
     }
 
-
 }
 
 function showError(input,msg){

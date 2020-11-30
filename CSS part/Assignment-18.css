@@ -77,6 +77,10 @@ body{
     border: none;
 }
 
+.form button :hover{
+    background-color: #ff5252;
+}
+
 .form-container.error input{
     border-color: #e84118;
 }
